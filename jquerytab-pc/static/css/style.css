@@ -1,0 +1,30 @@
+*{margin: 0;padding: 0;font-family: "微软雅黑";font-weight: normal;list-style:none;font-style:normal;text-decoration:none}
+.container{width: 1200px;margin: 0 auto;}
+/*产品展示*/
+.pro-center{width: 100%;height: auto;overflow: hidden;padding: 35px 0 30px 0;background: #ffffff;}
+.pro-center .title{font-size: 34px;text-align: center;padding-bottom: 5px;color: #333333;letter-spacing: 1px;}
+.pro-center .sub-title{font-size: 20px;text-align: center;color: #333333;}
+.pro-center .sub-title span{display: inline-block;height: 30px;line-height: 30px;width: auto;}
+.pro-center .sub-title span.text{padding: 0 10px;}
+/*产品展示左侧*/
+.pro-left{float: left;width: 240px;box-sizing: border-box;box-shadow: 0px 10px 10px #f7f7f7;}
+.pro-content{width: 100%;padding-top: 40px;}
+.pro-right{float: right;width: 940px;}
+.pro-left .left-title{background: #317fff;height: 110px;line-height: 110px;text-align: center;}
+.pro-left .left-title span{display: inline-block;color: #FFFFFF;font-size: 24px;font-weight: bold;}
+.pro-left .left-title span.text{padding: 0 10px;}
+.pro-left .left-category ul li{height: 60px;line-height: 60px;font-size: 20px;text-align: center;cursor: pointer;color: #999999;}
+.pro-left .left-category ul li.on{background: #087fd2;color: #FFFFFF;}
+.pro-left .left-category ul li:hover{background: #087fd2;color: #FFFFFF;}
+.pro-left .left-contact {margin-top: 37px;margin-bottom: 37px;text-indent: 70px;background: url(../image/tel.png) left 20px center no-repeat;}
+.pro-left .left-contact p{color: #317fff;font-size: 14px;}
+.pro-left .left-contact p.tel{font-size: 20px;padding-top: 10px;}
+/*产品展示右侧*/
+.pro-right{display: none;}
+.pro-right ul li{float: left;width: 300px;background: #f7f7f7;border: 1px solid #f7f7f7;margin-right: 20px;box-sizing: border-box;margin-bottom: 35px;transition: all .3s linear;}
+.pro-right ul li:nth-child(3n){margin-right: 0;}
+.pro-right ul li .img{width:100%;height:230px;overflow: hidden;}
+.pro-right ul li img{width:100%;}
+.pro-right ul li p{height: 50px;line-height: 50px;text-align: center;font-size: 18px;color: #333333;}
+.pro-right.active{display: block;}
+.pro-right ul li:hover{box-shadow: 0px 0px 15px #c6c6c6;transition: all .2s linear;}

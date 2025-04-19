@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            border: 10px solid red;
+            /* overflow: hidden; */
+            /* 解决ie6高度塌陷问题 */
+            /* zoom: 1; */
+        }
+
+        /* 解决ie6高度塌陷问题ie6不支持伪类 */
+        .clearFloat {
+            zoom: 1;
+        }
+
+        /* 高度坍塌和垂直重叠 */
+        .clearFloat:after,
+        .clearFloat:before {
+            /* 添加内容 */
+            content: '';
+            /* 转换块状元素 */
+            display: table;
+            /* 清除浮动 */
+            clear: both;
+        }
+
+        .box2 {
+            background-color: blueviolet;
+            width: 100px;
+            height: 100px;
+            float: left;
+        }
+
+        .box3 {
+            background-color:blue;
+            width: 200px;
+            height: 200px;
+            margin-top: 100px;
+        }
+
+        .box4 {
+            background-color:yellow;
+            width: 100px;
+            height: 100px;
+           margin-top: 50px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="box1 clearFloat">
+        <div class="box2"></div>
+    </div>
+
+    <div class="box3 clearFloat">
+        <div class="box4"></div>
+    </div>
+</body>
+
+</html>
