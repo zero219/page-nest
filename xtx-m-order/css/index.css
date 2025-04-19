@@ -1,0 +1,190 @@
+/* 首页的css文件 */
+
+body {
+    background-color: #f7f7f8;
+}
+
+.cf4444 {
+    color: #cf4444;
+}
+
+.pannel {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.main {
+    /* 底部80px是为了不遮住内容 */
+    padding: 10px 11px 80px;
+}
+
+/* 用户信息 */
+.user_msg {
+    display: flex;
+    align-items: center;
+    padding: 15px 0 15px 11px;
+}
+
+.user_msg .location {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 10px;
+    background-image: linear-gradient(90deg, #6fc2aa 5%, #54b196 100%);
+    border-radius: 50%;
+    text-align: center;
+    background-color: #fff;
+}
+
+.user_msg .content {
+    flex: 1;
+}
+
+.user_msg .content .top {
+    display: flex;
+}
+
+.user_msg .content .top h5 {
+    width: 55px;
+}
+
+.user_msg .content .bottom {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.user_msg .more {
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    /* background-color: pink; */
+}
+
+/* 商品 */
+.goods {
+    display: flex;
+    padding: 11px 00 11px 11px;
+}
+
+.goods .pic {
+    width: 85px;
+    height: 85px;
+    margin-right: 10px;
+}
+
+.goods .pic img {
+    width: 85px;
+    height: 85px;
+}
+
+.goods .info {
+    flex: 1;
+}
+
+.goods .info p {
+    width: 95px;
+    height: 20px;
+    margin: 5px 0;
+    background-color: #f7f7f8;
+    font-size: 12px;
+    color: #888;
+}
+
+.goods .info p span:first-child {
+    margin-right: 5px;
+}
+
+.goods .info .price span:last-child {
+    margin-left: 5px;
+    font-size: 12px;
+    color: #999;
+    text-decoration: line-through;
+}
+
+.goods .count {
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+}
+
+.rest_1 {
+    padding: 15px;
+}
+
+.rest_1 div {
+    display: flex;
+    margin: 15px 0;
+}
+
+.rest_1 div:nth-child(2n+1) {
+    justify-content: space-between;
+}
+
+.rest_1 div p {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.rest_1 div:nth-child(2) p:nth-child(2) {
+    margin-left: 35px;
+    font-size: 12px;
+    color: #888;
+}
+
+.rest_2 {
+    padding: 15px;
+}
+
+.rest_2 div {
+    display: flex;
+    margin: 15px 0;
+    justify-content: space-between;
+}
+
+/* 底部支付 */
+.pay {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 80px;
+    width: 100%;
+    border-top: 1px solid #f7f7f8;
+
+    display: flex;
+    /* 左右布局 */
+    justify-content: space-between;
+    /* 垂直居中 */
+    align-items: center;
+
+    padding: 0 11px;
+    /* background-color: pink; */
+}
+
+.pay .left {
+    font-size: 16px;
+}
+
+.pay .left span {
+    font-size: 12px;
+}
+
+.pay .left i {
+    font-size: 20px;
+}
+
+.right button {
+    width: 110px;
+    height: 40px;
+    border-radius: 5%;
+    border: 1px solid #27ba9b;
+    background-color: #27ba9b;
+}
+
+.right button span {
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 0;
+}

@@ -1,0 +1,77 @@
+/* 基础公共样式 */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+input {
+    margin: 0;
+    padding: 0;
+}
+
+/* 内减模式 */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font: 16px/1.5 "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+    color: L□#333;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+em,
+i {
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+img {
+    vertical-align: middle;
+}
+
+input {
+    border: none;
+    outline: none;
+    color: #333;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+/* 高度坍塌和垂直重叠 */
+.clearfix:after,
+.clearfix:before {
+    /* 添加内容 */
+    content: '';
+    /* 转换块状元素 */
+    display: table;
+}
+
+.clearfix:after {
+    /* 清除浮动 */
+    clear: both;
+}

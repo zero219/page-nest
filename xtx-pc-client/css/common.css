@@ -1,0 +1,288 @@
+/* 该网站中多个网页相同模块的重复样式，如头部、底部 */
+
+html {
+    /* 页面滑动 */
+    scroll-behavior: smooth;
+}
+
+/* 版心 */
+.wrapper {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+.headerTop {
+    position: fixed;
+    top: -80px;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    background-color: #fff;
+    transition: all 0.3s;
+    z-index: 99;
+}
+
+/* 快捷导航栏 */
+.shortcut {
+    height: 52px;
+    background-color: #333;
+}
+
+.shortcut .wrapper {
+    height: 52px;
+    line-height: 52px;
+    background-color: #333;
+}
+
+.shortcut .wrapper ul {
+    float: right;
+}
+
+.shortcut .wrapper li {
+    float: left;
+}
+
+.shortcut .wrapper a {
+    font-size: 12px;
+    color: #bababa;
+    padding: 0 16px;
+    border-right: 1px solid #bababa;
+}
+
+.shortcut .wrapper a span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../images//phone.png);
+    /* 背景图自适应 */
+    background-size: cover;
+    vertical-align: middle;
+    margin-right: 2px;
+
+}
+
+.shortcut .wrapper .outside {
+    border-right: 0;
+}
+
+.header {
+    margin: 30px auto;
+    height: 80px;
+}
+
+.logo {
+    float: left;
+    width: 237px;
+    height: 80px;
+    /* background-color: pink; */
+}
+
+.logo h1 {
+    width: 237px;
+    height: 80px;
+}
+
+.logo h1 a {
+    display: block;
+    width: 237px;
+    height: 80px;
+    background-image: url(../images/logo.png);
+    background-size: contain;
+    /* 隐藏文字 */
+    font-size: 0;
+}
+
+.nav {
+    float: left;
+    margin-left: 40px;
+    height: 80px;
+    /* background-color: pink; */
+}
+
+.nav ul {
+    height: 80px;
+    line-height: 80px;
+}
+
+.nav li {
+    float: left;
+    padding: 0 15px;
+}
+
+.nav li a {
+
+    padding-bottom: 5px;
+}
+
+.nav li a:hover {
+    border-bottom: 1px solid #28bf9c;
+    color: #28bf9c;
+}
+
+.active {
+    border-bottom: 1px solid #28bf9c;
+    color: #28bf9c;
+}
+
+.search {
+    position: relative;
+    float: left;
+    margin-left: 20px;
+    margin-top: 25px;
+    width: 172px;
+    height: 30px;
+    border: 1px solid #e7e7e7;
+}
+
+.search input {
+    padding-left: 30px;
+    height: 28px;
+    width: 170px;
+}
+
+.search span {
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    top: 0;
+    width: 28px;
+    height: 28px;
+    background-image: url(../images/search.png);
+    background-size: contain;
+    /* background-color: #333; */
+}
+
+.search input::placeholder {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.shoppingcar {
+    position: relative;
+    float: left;
+    margin-left: 15px;
+    width: 20px;
+    height: 20px;
+
+}
+
+.shoppingcar span {
+    position: absolute;
+    /* display: inline-block; */
+    left: 15px;
+    top: 25px;
+    width: 28px;
+    height: 28px;
+    background-image: url(../images/购物车.png);
+    background-size: contain;
+}
+
+.footer {
+    height: 400px;
+    background-color: #333;
+}
+
+.footer .wrapper {
+    width: 1393px;
+}
+
+.footer .top {
+    height: 200px;
+    padding-top: 58px;
+    padding-left: 50px;
+    border-bottom: 3px solid #434343;
+    /* border: 1px solid pink; */
+}
+
+.footer .top ul li {
+    position: relative;
+    float: left;
+    margin-left: 340px;
+    width: 195px;
+    height: 58px;
+    line-height: 58px;
+    /* border: 1px solid pink; */
+}
+
+.footer .top ul li:first-child {
+    margin-left: 0;
+}
+
+.footer .top ul li span {
+    font-size: 28px;
+    margin-left: 60px;
+    color: #fff;
+}
+
+.footer .top ul li::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    height: 58px;
+    width: 58px;
+    background-image: url(../images/价格.png);
+    background-size: contain;
+}
+
+.footer .top ul li:nth-child(2)::before {
+    background-image: url(../images/物流.png);
+}
+
+.footer .top ul li:nth-child(3)::before {
+    background-image: url(../images/品质.png);
+}
+
+.footer .buttom {
+    padding-top: 40px;
+    text-align: center;
+}
+
+.footer .buttom p {
+    padding-top: 30px;
+    color: #999;
+}
+
+.footer .buttom a {
+    border-left: 1px solid #999;
+    margin-left: 10px;
+    padding-left: 10px;
+    color: #999;
+}
+
+.footer .buttom a:first-child {
+    border-left: 0;
+}
+
+.elevator {
+    position: fixed;
+    bottom: 50%;
+    right: 50%;
+    transform: translate3d(716px, 100%, 0);
+    width: 60px;
+    background-color: #ccc;
+    opacity: 0;
+    transition: all, 0.5s;
+}
+
+.elevator li {
+    padding: 10px 10px;
+    text-align: center;
+    border-top: 1px solid #fff;
+}
+
+.elevator li a {
+    display: inline-block;
+    width: 100%;
+    font-size: 16px;
+}
+
+.elevator i {
+    display: grid;
+}
+
+.current {
+    color: #28bf9c;
+}

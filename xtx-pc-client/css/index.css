@@ -1,0 +1,301 @@
+/* 首页的css文件 */
+.banner {
+    height: 500px;
+    background-color: #f5f5f5;
+}
+
+.banner .wrapper {
+    position: relative;
+    height: 500px;
+}
+
+.banner .aside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 500px;
+    width: 270px;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.banner .aside ul li {
+    height: 50px;
+    line-height: 50px;
+}
+
+.banner .aside ul li:hover {
+    background-color: #27ba9b;
+}
+
+.banner .aside ul li a {
+    position: relative;
+    display: block;
+    height: 50px;
+    padding-left: 35px;
+    padding-right: 15px;
+    color: #fff;
+}
+
+.banner .aside ul li a span {
+    margin-left: 15px;
+    font-size: 16px;
+}
+
+.banner .aside ul li a::after {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-image: url(../images/右-箭头.png);
+    background-size: contain;
+    /* background-color: #27ba9b; */
+}
+
+.banner .aside ul li ul {
+    position: absolute;
+    top: 0;
+    left: 270px;
+    width: 150px;
+    display: none;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.banner .aside ul li ul li a::after {
+    content: none;
+    /* background-image: url(); */
+}
+
+
+/* 箭头 */
+.banner .prev,
+.next {
+    position: absolute;
+    top: 228px;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, .2);
+    border-radius: 50%;
+}
+
+.prev {
+    left: 280px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* 圆点 */
+.banner ol {
+    position: absolute;
+    left: 680px;
+    bottom: 30px;
+    width: 200px;
+    height: 10px;
+}
+
+.banner ol li {
+    float: left;
+    margin-right: 24px;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.banner ol .current {
+    background-color: #fff;
+}
+
+.goods .goodFoodHeader {
+    height: 114px;
+    line-height: 114px;
+    /* background-color: pink; */
+}
+
+.goods .goodFoodHeader h2 {
+    float: left;
+    height: 114px;
+    font-size: 24px;
+}
+
+.goods .goodFoodHeader h2 span {
+    margin-left: 25px;
+    font-size: 16px;
+    color: #999;
+}
+
+.goods .goodFoodHeader a {
+    float: right;
+    color: #999;
+    font-size: 16px;
+
+}
+
+.goods .goodFoodHeader a::after {
+    display: inline-block;
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-image: url(../images/右箭头.png);
+    background-size: contain;
+    vertical-align: middle;
+    margin-left: 5px;
+    /* background-color: pink; */
+}
+
+
+
+.goods .goodFoodBody ul li {
+    position: relative;
+    float: left;
+    width: 302px;
+    height: 405px;
+    margin-left: 8px;
+    text-align: center;
+    /* 溢出隐藏 */
+    overflow: hidden;
+    /* background-color: #27ba9b; */
+}
+
+.goods .goodFoodBody ul li:first-child {
+    margin-left: 0;
+}
+
+.goods .goodFoodBody ul li img {
+    width: 302px;
+    height: 305px;
+    transition: all 0.5s;
+}
+
+.goods .goodFoodBody ul li:hover img {
+    /* 放大1.1倍 */
+    transform: scale(1.1);
+}
+
+.goods .goodFoodBody ul li h3 {
+    margin: 20px 0 10px 0;
+}
+
+.goods .goodFoodBody ul li div {
+    font-size: 16px;
+    color: #cf4444;
+}
+
+.goods .goodFoodBody ul li b {
+    position: absolute;
+    top: 17px;
+    left: 18px;
+    height: 51px;
+    width: 28px;
+    border: 1px solid #27ba9b;
+}
+
+.goods .popularityHeader {
+    height: 114px;
+    line-height: 114px;
+    /* background-color: pink; */
+}
+
+.goods .popularityHeader h2 {
+    float: left;
+    height: 114px;
+    font-size: 24px;
+}
+
+.goods .popularityHeader h2 span {
+    margin-left: 25px;
+    font-size: 16px;
+    color: #999;
+}
+
+.goods .popularityBody ul li {
+    position: relative;
+    float: left;
+    width: 302px;
+    height: 405px;
+    margin-left: 8px;
+    text-align: center;
+    /* background-color: #27ba9b; */
+}
+
+.goods .popularityBody ul li:first-child {
+    margin-left: 0;
+}
+
+.goods .popularityBody ul li img {
+    width: 302px;
+    height: 305px;
+}
+
+.goods .popularityBody ul li div {
+    height: 80px;
+    line-height: 80px;
+    background-color: #f0f9f4;
+}
+
+.goods .popularityBody ul li div h3 {
+    height: 30px;
+}
+
+.goods .popularityBody ul li div span {
+    color: #999;
+}
+
+.goods .brandsHeader {
+    height: 114px;
+    line-height: 114px;
+    /* background-color: pink; */
+}
+
+.goods .brandsHeader h2 {
+    float: left;
+    height: 114px;
+    font-size: 24px;
+}
+
+.goods .brandsHeader h2 span {
+    margin-left: 25px;
+    font-size: 16px;
+    color: #999;
+}
+
+.goods .brandsBody ul li {
+    position: relative;
+    float: left;
+    width: 302px;
+    height: 405px;
+    margin-left: 8px;
+    text-align: center;
+    /* background-color: #27ba9b; */
+}
+
+.goods .brandsBody ul li:first-child {
+    margin-left: 0;
+}
+
+.goods .brandsBody ul li img {
+    width: 302px;
+    height: 305px;
+}
+
+.goods .brandsBody ul li div {
+    height: 80px;
+    line-height: 80px;
+    background-color: #f0f9f4;
+}
+
+.goods .brandsBody ul li div h3 {
+    height: 30px;
+}
+
+.goods .brandsBody ul li div span {
+    color: #999;
+}
